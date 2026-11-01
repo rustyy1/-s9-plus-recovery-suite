@@ -10,6 +10,43 @@ A comprehensive, production-ready desktop tool suite engineered specifically for
 
 ---
 
+## 📸 Application Screenshots
+
+### 1. S9+ HDMI Viewer & Controller (`main_hdmi_viewer.py`)
+
+| USB Signal Path & Live Ingest | Remote Control & Virtual Touch |
+| :---: | :---: |
+| ![HDMI Viewer Signal Path](docs/assets/hdmi_viewer_signal_path.png) | ![HDMI Viewer Remote Control](docs/assets/hdmi_viewer_remote_control.png) |
+| *Real-time UVC capture stream, resolution selector & USB chain status* | *Coordinate mapping, quick touch actions, unlock gestures & scrcpy control* |
+
+<p align="center">
+  <img src="docs/assets/hdmi_viewer_dex_mode.png" alt="DeX vs Screen Mirroring Management" width="850">
+  <br>
+  <em>Samsung DeX vs. Phone Mirroring Control & Safe Broadcast Automation</em>
+</p>
+
+---
+
+### 2. Galaxy S9+ Recovery Console (`main.py`)
+
+| Device Health Dashboard | Screen Mirroring & Scrcpy Launch |
+| :---: | :---: |
+| ![Recovery Console Dashboard](docs/assets/recovery_console_dashboard.png) | ![Recovery Console Mirroring](docs/assets/recovery_console_mirror.png) |
+| *Real-time device detection, authorization, and battery status* | *Low-latency mirroring with custom bitrate and resolution* |
+
+| Storage & Partition Diagnostics | DeX & External Display Guide |
+| :---: | :---: |
+| ![Storage Diagnostics](docs/assets/recovery_console_storage.png) | ![DeX Guide](docs/assets/recovery_console_dex_guide.png) |
+| *Live partition inspection (/data, /system, internal & SD card)* | *Hardware setup diagrams and troubleshooting walkthroughs* |
+
+<p align="center">
+  <img src="docs/assets/recovery_console_troubleshoot.png" alt="Connection Troubleshooting Engine" width="850">
+  <br>
+  <em>Interactive Connection Diagnostic Wizard</em>
+</p>
+
+---
+
 ## 📑 Table of Contents
 
 - [Overview](#-overview)
@@ -24,7 +61,7 @@ A comprehensive, production-ready desktop tool suite engineered specifically for
 - [Running Tests](#-running-tests)
 - [Building Standalone Executables](#-building-standalone-executables)
 - [Troubleshooting Matrix](#-troubleshooting-matrix)
-- [Contributing & License](#-license)
+- [License](#-license)
 
 ---
 
@@ -194,6 +231,15 @@ s9+/
 │   ├── scrcpy_manager.py        # scrcpy process launcher (full and control-only)
 │   ├── usb_detector.py          # Windows USB device listener and port checker
 │   └── uvc_capture.py           # PySide6 QtMultimedia UVC camera capture engine
+├── docs/assets/                 # Application screenshots & visual assets
+│   ├── hdmi_viewer_signal_path.png
+│   ├── hdmi_viewer_remote_control.png
+│   ├── hdmi_viewer_dex_mode.png
+│   ├── recovery_console_dashboard.png
+│   ├── recovery_console_mirror.png
+│   ├── recovery_console_storage.png
+│   ├── recovery_console_dex_guide.png
+│   └── recovery_console_troubleshoot.png
 ├── ui/                          # GUI components built on PySide6 / Qt6
 │   ├── app.py                   # Main window for Recovery Console
 │   ├── hdmi_viewer_window.py    # Main window for HDMI Viewer & Controller
@@ -205,7 +251,7 @@ s9+/
 │   ├── troubleshoot_page.py     # Interactive troubleshooting assistant
 │   ├── widgets.py               # Reusable styled UI widgets (cards, meters, badges)
 │   └── theme.py                 # Modern dark theme palette & stylesheets
-├── tests/                       # Complete automated unit test suite
+├── tests/                       # Complete automated unit test suite (58 passing tests)
 │   ├── test_adb_controller.py
 │   ├── test_adb_manager.py
 │   ├── test_device_info.py
