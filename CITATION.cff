@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or technical teardowns, please cite it as below."
+authors:
+  - name: "Vipul Gavade"
+title: "Galaxy S9+ Recovery & HDMI Control Suite"
+version: 1.0.0
+date-released: 2026-11-01
+url: "https://github.com/rustyy1/-s9-plus-recovery-suite"
+keywords:
+  - "samsung-galaxy-s9"
+  - "screen-mirroring"
+  - "uvc-capture"
+  - "broken-screen-recovery"
+  - "dex-mode"
+  - "scrcpy"
+  - "adb-controller"
+  - "pyside6"

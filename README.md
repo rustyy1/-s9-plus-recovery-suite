@@ -1,10 +1,12 @@
 # Galaxy S9+ Recovery & HDMI Control Suite 📱🖥️
 
+[![CI Test Suite](https://github.com/rustyy1/-s9-plus-recovery-suite/actions/workflows/ci.yml/badge.svg)](https://github.com/rustyy1/-s9-plus-recovery-suite/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![GUI](https://img.shields.io/badge/GUI-PySide6%20%2F%20Qt6-41CD52.svg?style=flat&logo=qt&logoColor=white)](https://wiki.qt.io/Qt_for_Python)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-58%20passed-brightgreen.svg)]()
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-0078D6.svg?logo=windows)](https://microsoft.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 A comprehensive, production-ready desktop tool suite engineered specifically for **diagnosing, displaying, controlling, and recovering data from a Samsung Galaxy S9+ (SM-G965F / SM-G965U)** with a black, broken, or unresponsive internal display.
 
